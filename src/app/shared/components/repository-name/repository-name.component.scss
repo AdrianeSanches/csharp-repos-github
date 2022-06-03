@@ -1,0 +1,35 @@
+div {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    flex-direction: row;
+    margin-top: 0.5vh;
+  }
+
+  span {
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 0.5vh;
+  }
+
+  .repository-name {
+    color: #0969dad1;
+    font-size: 24px;
+  }
+
+  .git1 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .git2 {
+    width: 17px;
+    height: 17px;
+    margin-left: 3vh;
+  }
+
+  .text {
+    color: #ff8207;
+    margin: 0;
+  }
+}

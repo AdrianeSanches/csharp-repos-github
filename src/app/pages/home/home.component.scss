@@ -1,0 +1,10 @@
+div {
+  margin: 2vh 5vh 0 5vh;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+  }
+}

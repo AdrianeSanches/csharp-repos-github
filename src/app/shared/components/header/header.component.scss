@@ -1,0 +1,17 @@
+.header {
+  background-color: gray;
+  color: #FFFFFF;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+  span {
+    margin-left: 41vw;
+  }
+}
