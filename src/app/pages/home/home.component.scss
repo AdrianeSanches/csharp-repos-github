@@ -1,10 +1,20 @@
 div {
-  margin: 2vh 5vh 0 5vh;
-  div {
+  margin: 2vh 2vh 0 2vh;
+  .div-father {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1vh;
     border-bottom: 1px solid rgba(128, 128, 128, 0.445);
+  }
+
+  .div-left {
+    width: 80%;
+  }
+
+  .div-right {
+    position: absolute;
+    right: 4%;
+    width: 12%;
   }
 }

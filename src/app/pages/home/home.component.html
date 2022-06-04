@@ -1,7 +1,11 @@
 <app-header></app-header>
 <div *ngFor="let item of arrayHome">
-  <div>
-    <app-repository-name [dataRepository]="item.dadosRepositorio"></app-repository-name>
-    <app-profile [dataProfile]="item.dadosPerfil"></app-profile>
+  <div class="div-father">
+    <div class="div-left">
+      <app-repository-name [dataRepository]="item.dadosRepositorio"></app-repository-name>
+    </div>
+    <div class="div-right">
+      <app-profile [dataProfile]="item.dadosPerfil"></app-profile>
+    </div>
   </div>
 </div>
