@@ -9,6 +9,7 @@ import { RepositoryNameComponent } from './shared/components/repository-name/rep
 import { CardRepositoryComponent } from './shared/components/card-repository/card-repository.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PullRequestComponent } from './pages/pull-request/pull-request.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProfileComponent,
     RepositoryNameComponent,
     CardRepositoryComponent,
-    HomeComponent
+    HomeComponent,
+    PullRequestComponent
   ],
   imports: [
     BrowserModule,

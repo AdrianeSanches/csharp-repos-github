@@ -1,4 +1,5 @@
 <div class="header">
-  <img src="../../../../assets/left-arrow.png">
+  <img *ngIf="!flagPage" src="../../../../assets/menu-aberto.png" (click)="checkPage()">
+  <img *ngIf="flagPage" src="../../../../assets/left-arrow.png" (click)="checkPage()">
   <span>Github C#Pop</span>
 </div>

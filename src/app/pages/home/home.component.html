@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div *ngFor="let item of arrayHome">
+<div *ngFor="let item of arrayHome" (click)="navigatePullRequest()">
   <div class="div-father">
     <div class="div-left">
       <app-repository-name [dataRepository]="item.dadosRepositorio"></app-repository-name>

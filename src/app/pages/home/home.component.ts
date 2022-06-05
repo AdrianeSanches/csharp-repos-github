@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { map } from 'rxjs';
 import { GithubService } from 'src/app/core/services/github.service';
 import { Profile } from 'src/app/shared/components/profile/profile.component';
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
 
   arrayHome: Home[] = [];
 
-  constructor(private _githubService: GithubService) {}
+  constructor( private _githubService: GithubService, private _router: Router ) {}
 
   ngOnInit(): void {
     this._githubService.obterRepositorios().subscribe(
@@ -41,5 +42,9 @@ export class HomeComponent implements OnInit {
         console.log(this.arrayHome);
       }
     );
+  }
+
+  navigatePullRequest() {
+    this._router.navigate(['/pullRequest']);
   }
 }
